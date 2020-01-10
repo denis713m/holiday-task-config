@@ -5,12 +5,16 @@ const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 const MediaQueryPlugin = require( 'media-query-plugin' );
 
 const config = {
-  entry: './index.js',
+  entry: [
+    './index.js',
+  ],
+
   output: {
     filename: 'main.js',
     path: path.resolve( __dirname, '../build' ),
   },
   context: path.resolve( __dirname, '../src' ),
+
 
   plugins: [
     new CopyWebpackPlugin( [

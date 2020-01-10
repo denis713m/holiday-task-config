@@ -1,0 +1,56 @@
+#features{
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.featureText{
+  margin: 0px 0px 50px;
+  padding: 0px 15px;
+
+  @media screen and (min-width: $md){
+    width: 50%;
+  }
+  @media screen and (min-width: $lg){
+    width: 33.3333333%;
+  }
+}
+.iconTools{
+  display: block;
+  height: 60px;
+  width: auto;
+
+}
+.Tools{
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0;
+
+}
+.parTools{
+  font-size: 14px;
+  line-height:22.4px;
+  font-weight: 400;
+  color: #6c7279;
+  margin-bottom: 10px;
+
+}
+
+#icon1{
+  background: url("../images/01.png") no-repeat center;
+}
+#icon2{
+  background: url("../images/02.png") no-repeat center;
+}
+#icon3{
+  background: url("../images/03.png") no-repeat center;
+}
+#icon4{
+  background: url("../images/04.png") no-repeat center;
+}
+#icon5{
+  background: url("../images/Layer 43.png") no-repeat center;
+}
+#icon6{
+  background: url("../images/06.png") no-repeat center;
+}

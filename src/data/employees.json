@@ -1,38 +1,55 @@
 [
   {
-    "name": "Test",
+    "name": "Ruth Wood",
+    "position": "FOUNDER, CEO",
+    "info": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.",
     "contacts": [
-      "test",
-      "test",
-      "facebook/sdfsdf"
+      "https://www.facebook.com/",
+      "https://twitter.com/?lang=ru",
+      "https://www.linkedin.com/",
+      "https://plus.google.com/",
+      "https://dribbble.com"
+    ],
+    "profilePicture": "./assets/images/team-1.jpg"
+  },
+  {
+    "name": "Timothy Reed",
+    "position": "CO-FOUNDER, DEVELOPER",
+    "info": "tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.",
+    "contacts": [
+      "https://www.facebook.com/",
+      "https://twitter.com/?lang=ru",
+      "https://www.linkedin.com/",
+      "https://plus.google.com/",
+      "https://dribbble.com"
     ],
     "profilePicture": "./assets/images/team-2.jpg"
   },
   {
-    "name": "Test",
+    "name": "Victoria Valdez",
+    "position": "UI DESIGNER",
+    "info": "Fum quis risus eget urna mollis ornare vel eu leo.",
     "contacts": [
-      "test",
-      "test",
-      "facebook/sdfsdf"
+      "https://dribbble.com",
+      "https://www.facebook.com/",
+      "https://twitter.com/?lang=ru",
+      "https://www.linkedin.com/",
+      "https://plus.google.com/"
+
     ],
-    "profilePicture": "./assets/images/team-2.jpg"
+    "profilePicture": "./assets/images/team-3.jpg"
   },
   {
-    "name": "Test",
+    "name": "Beverly Little",
+    "position": "DATA SCIENTIST",
+    "info": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.",
     "contacts": [
-      "test",
-      "test",
-      "facebook/sdfsdf"
+
+      "https://twitter.com/?lang=ru",
+      "https://www.linkedin.com/",
+      "https://plus.google.com/",
+      "https://dribbble.com"
     ],
-    "profilePicture": "./assets/images/team-2.jpg"
-  },
-  {
-    "name": "Test",
-    "contacts": [
-      "test",
-      "test",
-      "facebook/sdfsdf"
-    ],
-    "profilePicture": "./assets/images/team-2.jpg"
+    "profilePicture": "./assets/images/team-4.jpg"
   }
 ]

@@ -1,0 +1,114 @@
+@import "theme";
+@import "break-points";
+
+.teams{
+  padding: 100px 0;
+
+}
+.teamsContainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.team{
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto 50px;
+
+  @media screen and (min-width: $sm){
+    width: 50%;
+  }
+  @media screen and (min-width: $lg){
+    width: 25%;
+  }
+}
+
+.employeePicture{
+  display: block;
+  max-width:270px;
+  height: auto;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  @media screen and (min-width: $sm){
+    width: 270px;
+    height: 270px;
+  }
+  @media screen and (min-width: $lg){
+  width: 212.5px;
+  height: 212.5px;
+}
+  @media screen and (min-width: $xl){
+    width: 262.5px;
+    height: 262.5px;
+  }
+
+}
+.personInfo{
+  margin: 20px auto 0;
+  max-width: 270px;
+  text-align: center;
+  @media screen and (min-width: $xl){
+    text-align: left;
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li{
+      margin-bottom: 5px;
+    }
+
+    .teamSocial {
+      display: block;
+      border: 1px solid #e8ecee;
+      border-radius: 2px;
+      height: 40px;
+      width: 40px;
+      color: #c6cacc;
+      font-size: 18px;
+      line-height: 40px;
+      margin-right: 5px;
+      text-align: center;
+    }
+
+    .teamSocial:hover, .teamSocial:active {
+      border-color: $accent-color;
+      background-color: $accent-color;
+      color: #fff;
+    }
+  }
+
+
+
+
+}
+
+.name{
+  margin: 10px 0;
+  font-size: 22px;
+  color: #2d3033;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+
+}
+
+.position{
+  margin: 10px 0 20px;
+  color: $accent-color;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.info{
+  display: block;
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #6c7279;
+  height: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+

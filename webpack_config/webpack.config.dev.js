@@ -6,8 +6,10 @@ const developmentConfig = merge( commonConfig, {
   mode: 'development',
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: path.join( __dirname, '../build' ),
+    contentBase: path.join( __dirname, '../build' )
+
   },
+
 
 } );
 

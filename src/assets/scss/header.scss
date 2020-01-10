@@ -1,0 +1,95 @@
+@import "theme";
+@import "break-points";
+
+
+#pageHeader{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+}
+.headerContainer{
+  width: 90%;
+  margin: 0px auto;
+}
+#headerTop{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 40px 0px;
+  position: relative;
+
+}
+.logo{
+  width: auto;
+  height: 24px;
+  background: url("../images/logo.png") no-repeat left;
+
+}
+.button{
+  position:fixed;
+  width: 44px;
+  height: 44px;
+  top: 32px;
+  right: 5%;
+  border-radius: 50%;
+  background-color: $accent-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: $lg){
+    display: none;
+  }
+
+}
+.line{
+  background-color: #fff;
+  width: 18px;
+  height: 3px;
+}
+
+.line + .line{
+  margin-top: 3px;
+}
+input:checked {
+  + label{background-color: green;
+    .line{
+      transform-origin: left center;
+      transform: rotate(45deg);
+    }
+
+    .line + .line{
+      margin-top: 9px;
+      transform-origin: left center;
+      transform: rotate(-4c
+      deg);
+    }
+
+    #middleLine{
+    display: none;
+  }
+  }
+  + ul.headerMenu{
+    display: block;
+  }
+}
+
+.headerMenu{
+  display: none;
+  @media screen and (min-width: $lg){
+    display: block;
+    text-align: right;
+    line-height: 24px;
+
+    li{
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 13px;
+      font-weight: 700;
+      margin-left: 40px;
+      text-transform: uppercase;
+      display: inline;
+    }
+
+  }
+}
+
