@@ -13,9 +13,8 @@
   margin: 0px auto;
 }
 #headerTop{
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   padding: 40px 0px;
-  position: relative;
+
 
 }
 .logo{
@@ -26,6 +25,7 @@
 }
 .button{
   position:fixed;
+  z-index: 99999;
   width: 44px;
   height: 44px;
   top: 32px;
@@ -46,41 +46,44 @@
   background-color: #fff;
   width: 18px;
   height: 3px;
+  transition: all 0.3s;
 }
 
 .line + .line{
   margin-top: 3px;
 }
 input:checked {
-  + label{background-color: green;
+  + label{
     .line{
+      margin-left: 3px;
       transform-origin: left center;
-      transform: rotate(45deg);
+
+      transform: rotate(42deg);
+      transition: all 0.3s;
     }
 
     .line + .line{
       margin-top: 9px;
+      margin-left: 3px;
       transform-origin: left center;
-      transform: rotate(-4c
-      deg);
+      transform: rotate( -42deg );
     }
 
     #middleLine{
     display: none;
   }
   }
-  + ul.headerMenu{
+  + ul#headerMenu{
     display: block;
   }
 }
 
-.headerMenu{
+#headerMenu{
   display: none;
   @media screen and (min-width: $lg){
     display: block;
     text-align: right;
     line-height: 24px;
-
     li{
       color: rgba(255, 255, 255, 0.75);
       font-size: 13px;
@@ -89,7 +92,25 @@ input:checked {
       text-transform: uppercase;
       display: inline;
     }
+  }
+}
+#mobileMenu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 101;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  li{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
 
   }
 }
-

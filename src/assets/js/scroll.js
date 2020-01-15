@@ -14,6 +14,7 @@ function headerStyle() {
             header.style.backgroundColor = null;
             headerTop.style.paddingTop = "40px";
             headerTop.style.paddingBottom = "40px";
+            headerTop.style.borderBottom = "1px solid rgba(255, 255, 255, 0.15)";
             buttonMenu.style.top = "32px";
         }
         else
@@ -21,6 +22,7 @@ function headerStyle() {
             header.style.backgroundColor = "#292c47";
             headerTop.style.paddingTop = "25px";
             headerTop.style.paddingBottom = "25px";
+            headerTop.style.borderBottom = null;
             buttonMenu.style.top = "18px";
         }
 

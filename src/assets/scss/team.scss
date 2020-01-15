@@ -1,48 +1,6 @@
 @import "theme";
-@import "break-points";
 
-.teams{
-  padding: 100px 0;
 
-}
-.teamsContainer{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.team{
-  padding: 0 15px;
-  width: 100%;
-  margin: 0 auto 50px;
-
-  @media screen and (min-width: $sm){
-    width: 50%;
-  }
-  @media screen and (min-width: $lg){
-    width: 25%;
-  }
-}
-
-.employeePicture{
-  display: block;
-  max-width:270px;
-  height: auto;
-  width: calc(100% - 30px);
-  margin: 0 auto;
-  @media screen and (min-width: $sm){
-    width: 270px;
-    height: 270px;
-  }
-  @media screen and (min-width: $lg){
-  width: 212.5px;
-  height: 212.5px;
-}
-  @media screen and (min-width: $xl){
-    width: 262.5px;
-    height: 262.5px;
-  }
-
-}
 .personInfo{
   margin: 20px auto 0;
   max-width: 270px;

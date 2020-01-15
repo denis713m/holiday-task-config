@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ActiveBox</title>
+    <title>Karzov-ActiveBox</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway:300,400,600,700&display=swap"
@@ -13,6 +13,7 @@
 <body>
 
 <header id="pageHeader">
+
     <div class="container headerContainer">
         <div id="headerTop">
             <div class="logo">
@@ -22,12 +23,12 @@
                     <span id="middleLine" class="line"></span>
                     <span class="line"></span>
                 </label>
-                <ul class="headerMenu">
-                    <li><a href="#features">FEATURES</a></li>
-                    <li><a href="#works">WORKS</a></li>
-                    <li><a href="#ourTeam">OUR TEAM</a></li>
-                    <li><a href="#">TESTIMONIALS</a></li>
-                    <li><a href="#">DOWNLOAD</a></li>
+                <ul id="headerMenu" >
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#teamContainer">OUR TEAM</a></li>
+                <li><a href="#sliderContainer">TESTIMONIALS</a></li>
+                <li><a href="#download">DOWNLOAD</a></li>
                 </ul>
             </div>
 
@@ -35,6 +36,7 @@
         </div>
 
     </div>
+
 </header>
 
 <section class="banner">
@@ -97,21 +99,49 @@
 
 </section>
 <section id="works" >
-    <a id="work1" href="images/work-1" class="work-box"></a>
-    <a id="work2" href="images/work-2" class="work-box"></a>
-    <a id="work3" href="images/work-3" class="work-box"></a>
+    <a id="work1"  class="work-box">
+        <div class="workOverlay">
+            <h5>Project Name</h5>
+            <p>Website Design</p>
+        </div>
+    </a>
+    <a id="work2" href="#openModal" class="work-box"></a>
+    <a id="work3" href="#openModal" class="work-box"></a>
     <a id="work4" href="images/work-4" class="work-box"></a>
     <a id="work5" href="images/work-5" class="work-box"></a>
     <a id="work6" href="images/work-6" class="work-box"></a>
     <a id="work7" href="images/work-7" class="work-box"></a>
     <a id="work8" href="images/work-8" class="work-box"></a>
+
+
 </section>
-<selections  class="teams container">
-    <div id="ourTeam" class="teamsContainer">
+<div id="openModal" class="modalContainer">
+    <div id = "modal" class="modalDialog">
+        <a href="#" title="Закрыть" class="close"></a>
+        <img src="./assets/images/work-4.jpg" alt="">
+    </div>
+</div>
+<selections id="teamContainer" class="teams container">
+</selections>
+<section id="sliderContainer"></section>
+
+<section id="download">
+    <div class="downloadContainer">
+        <h3>
+            Are You Ready to Start? Download Now For Free!
+        </h3>
+        <p>
+            FUSCE DAPIBUS, TELLUS AC CURSUS COMMODO
+        </p>
+        <div class="downloadButton">
+
+
+        <a href="https://github.com/kamalcha/ActiveBox/archive/master.zip" >Download for Free</a>
+        </div>
+
 
     </div>
-</selections>   
-
+</section>
 
 <footer id="pageFooter">
     <div class="footerTop">

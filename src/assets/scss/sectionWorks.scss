@@ -1,6 +1,8 @@
 @import "break-points";
 
 #works{
+  padding-top: 25px;
+  border-top: 75px solid #fff;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -8,6 +10,7 @@
 }
 .work-box{
   display: block;
+  position: relative;
   border: 0.5px solid #fff;
   height: 350px;
   width: 100%;
@@ -21,30 +24,128 @@
 }
 .work-box:hover{
   content: "TEAM PROJECT";
+  background-size: auto 500px !important;
   box-shadow:inset 0 0 0 2000px rgba(232, 69, 69, 0.85);
+  .workOverlay{
+    display: block;
+    position: absolute;
+    h5{
+      margin-top: 200px;
 
+    }
+    p{
+      margin-top: 20px;
+    }
+  }
 }
+
+.workOverlay{
+  display: none;
+  width: inherit;
+  height: inherit;
+  color: #fff;
+  background-color: rgba(232, 69, 69, 0.85);
+  h5{
+    margin-top: 100px;
+    transition: margin-top 2s;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  p{
+    margin-top: 200px;
+    transition: margin-top 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+}
+
+
 #work1{
-  background: url("../images/work-1.jpg") no-repeat center;
+  background: url("../images/work-1.jpg") no-repeat left;
 }
 #work2{
-  background: url("../images/work-2.jpg") no-repeat center;
+  background-image: url("../images/work-2.jpg");
 }
 #work3{
-  background: url("../images/work-3.jpg") no-repeat center;
+  background: url("../images/work-3.jpg") no-repeat left;
 }
 #work4{
-  background: url("../images/work-4.jpg") no-repeat center;
+  background: url("../images/work-4.jpg") no-repeat left;
 }
 #work5{
-  background: url("../images/work-5.jpg") no-repeat center;
+  background: url("../images/work-5.jpg") no-repeat left;
 }
 #work6{
-  background: url("../images/work-6.jpg") no-repeat center;
+  background: url("../images/work-6.jpg") no-repeat left;
 }
 #work7{
-  background: url("../images/work-7.jpg") no-repeat center;
+  background: url("../images/work-7.jpg") no-repeat left;
 }
 #work8{
-  background: url("../images/work-8.jpg") no-repeat center;
+  background: url("../images/work-8.jpg") no-repeat left;
 }
+
+
+
+.modalContainer{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+
+  &:target{
+    background-color: rgba(125,0,0,0.5);
+  }
+
+}
+
+
+
+
+.modalDialog {
+  position: fixed;
+  width: 80vw;
+  max-width: 680px;
+  top: 25%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 4px;
+  border: 15px solid #fff;
+  z-index: 8888;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.modalDialog:hover{
+  border: 15px solid #3a3e64;
+}
+.close {
+  background-image: url("../images/fancybox_sprite@2x.png");
+  background-size: 44px 152px;
+  position: absolute;
+  z-index: 9999;
+  left: calc( 100% - 3px);
+  top: -33px;
+  width: 36px;
+  height:36px;
+  border: 1px solid #fff;
+
+}
+.close:hover {
+  background: #00d9ff;
+  width: 55px;
+}
+

@@ -1,0 +1,40 @@
+@import "theme";
+
+#download{
+  padding: 100px 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.downloadContainer{
+  h3{
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+    font-family:Raleway, sans-serif;
+    text-align: center;
+  }
+  p{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #2d3033;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .downloadButton{
+    width: fit-content;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px 40px;
+    background-color: $accent-color;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+}
+
