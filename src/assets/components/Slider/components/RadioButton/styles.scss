@@ -1,0 +1,39 @@
+@import "../../../../scss/break-points";
+
+#slideControls{
+  width:100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @media screen and (min-width: $sm){
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  @media screen and (min-width: $xl){
+    margin-left: 25%;
+  }
+}
+
+.radioButton {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 11px;
+  width: 11px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+.radioButton input:checked {
+  + .checkmark {
+    background-color: rgba(255, 255, 255, 1);
+  }
+}

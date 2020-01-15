@@ -11,6 +11,7 @@
 .work-box{
   display: block;
   position: relative;
+  overflow: hidden;
   border: 0.5px solid #fff;
   height: 350px;
   width: 100%;
@@ -20,16 +21,20 @@
   @media screen and (min-width: $lg){
     width: 25%;
   }
-
 }
 .work-box:hover{
-  content: "TEAM PROJECT";
   background-size: auto 500px !important;
-  box-shadow:inset 0 0 0 2000px rgba(232, 69, 69, 0.85);
+  //box-shadow:inset 0 0 0 2000px rgba(232, 69, 69, 0.85);
   .workOverlay{
     display: block;
     position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+
     h5{
+      transition: margin 0.5s;
       margin-top: 200px;
 
     }
@@ -47,7 +52,7 @@
   background-color: rgba(232, 69, 69, 0.85);
   h5{
     margin-top: 100px;
-    transition: margin-top 2s;
+    transition: margin 0.5s;
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;
@@ -69,7 +74,7 @@
   background: url("../images/work-1.jpg") no-repeat left;
 }
 #work2{
-  background-image: url("../images/work-2.jpg");
+  background: url("../images/work-2.jpg") no-repeat left;
 }
 #work3{
   background: url("../images/work-3.jpg") no-repeat left;
@@ -101,16 +106,7 @@
   left: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
-
-  &:target{
-    background-color: rgba(125,0,0,0.5);
-  }
-
 }
-
-
-
-
 .modalDialog {
   position: fixed;
   width: 80vw;
@@ -122,16 +118,13 @@
   border-radius: 4px;
   border: 15px solid #fff;
   z-index: 8888;
-  transition: opacity 400ms ease-in;
   pointer-events: none;
   img{
     width: 100%;
     height: auto;
   }
 }
-.modalDialog:hover{
-  border: 15px solid #3a3e64;
-}
+
 .close {
   background-image: url("../images/fancybox_sprite@2x.png");
   background-size: 44px 152px;
@@ -141,11 +134,7 @@
   top: -33px;
   width: 36px;
   height:36px;
-  border: 1px solid #fff;
+  pointer-events: auto;
+}
 
-}
-.close:hover {
-  background: #00d9ff;
-  width: 55px;
-}
 

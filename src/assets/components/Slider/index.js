@@ -1,8 +1,9 @@
 'use strict';
 import createPicture from '../Picture';
+import createRadioButtons from './components/RadioButton'
 
-let nSlides = 0;
-let shownSlide = 0;
+/*let nSlides = 0;*/
+/*let shownSlide = 0;*/
 
 
 /**
@@ -13,7 +14,7 @@ let shownSlide = 0;
 export default function (slides) {
     const sliderContainer = document.createElement( 'div' );
     sliderContainer.style.position = "relative";
-    nSlides = slides.length;
+    /*nSlides = slides.length;*/
 
     slides.forEach( (slide, index) => {
         const slideElem = document.createElement( 'div' );
@@ -29,8 +30,8 @@ export default function (slides) {
         sliderContainer.appendChild(slideElem);
     } );
 
-
-    const sliderControls = document.createElement( 'div' );
+    const sliderControls = createRadioButtons(slides)
+/*    const sliderControls = document.createElement( 'div' );
     sliderControls.setAttribute("id", "slideControls");
     slides.forEach((slide, index) => {
         const label = document.createElement("label");
@@ -91,17 +92,16 @@ export default function (slides) {
         slideHide.style.position = "absolute";
         shownSlide = nextSlide;
 
-    }, 5000);
+    }, 5000);*/
 
     sliderContainer.appendChild(sliderControls);
 
     return sliderContainer;
 }
 
-function getNextIndex () {
+/*function getNextIndex () {
     return (shownSlide + 1) % nSlides;
-}
-
+}*/
 
 function createSlideInfo(slide) {
     const slideInfoElem = document.createElement( 'div' );
