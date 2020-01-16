@@ -7,6 +7,5 @@ import './assets/components/SliderLoader'
 import './assets/components/ModalWindow';
 import './assets/js/scroll.js';
 import './assets/js/mobileMenu.js';
-//import './assets/js/modalWindow.js';
 
 

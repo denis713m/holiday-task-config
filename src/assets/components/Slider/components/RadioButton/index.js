@@ -23,14 +23,7 @@ export default function (slides) {
         radioBtn.setAttribute("name", "radio");
         radioBtn.addEventListener('change',() =>{
             const slideShow = document.getElementById(`slide${radioBtn.getAttribute("id").substring(3)}`);
-            //changeSlide(slideShow);
-            slideShow.style.opacity = "1";
-            slideShow.style.top = "0";
-            slideShow.style.position = null;
-            const slideHide = document.getElementById(`slide${shownSlide}`);
-            slideHide.style.opacity = "0";
-            slideHide.style.top = "0";
-            slideHide.style.position = "absolute";
+            changeSlide(slideShow);
             shownSlide = radioBtn.getAttribute("id").substring(3);
         });
         label.appendChild(radioBtn);
@@ -42,14 +35,8 @@ export default function (slides) {
     setInterval(()=>{
         const nextSlide = getNextIndex();
         const slideShow = document.getElementById(`slide${nextSlide}`);
-        slideShow.style.opacity = "1";
-        slideShow.style.top = "0";
-        slideShow.style.position = null;
+        changeSlide(slideShow);
         document.getElementById(`btn${nextSlide}`).checked = true;
-        const slideHide = document.getElementById(`slide${shownSlide}`);
-        slideHide.style.opacity = "0";
-        slideHide.style.top = "0";
-        slideHide.style.position = "absolute";
         shownSlide = nextSlide;
     }, 5000);
     return sliderControls;
@@ -59,7 +46,6 @@ function getNextIndex () {
     return (shownSlide + 1) % nSlides;
 }
 
-/*
 function changeSlide(slideShow) {
     slideShow.style.opacity = "1";
     slideShow.style.top = "0";
@@ -68,6 +54,4 @@ function changeSlide(slideShow) {
     slideHide.style.opacity = "0";
     slideHide.style.top = "0";
     slideHide.style.position = "absolute";
-    shownSlide = slideShow.getAttribute("id").substring(3);
-
-}*/
+}

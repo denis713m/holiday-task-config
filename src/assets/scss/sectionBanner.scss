@@ -1,0 +1,42 @@
+@import "theme";
+@import "break-points";
+
+.banner{
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  overflow: hidden;
+  min-height: 750px;
+  padding: 55% 15px 0px 15px;
+  color: #FFF;
+  text-align: center;
+  @media screen and (min-width: $md){
+    padding-top: 188.32px;
+  }
+  @media screen and (min-width: $lg){
+    padding-top: 230px;
+  }
+}
+.sectionText{
+  margin: 20px auto 10px auto;
+  max-width: 920px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+
+}
+.sectionParagr{
+  margin: 0 auto 80px auto;
+  max-width: 920px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.sectionButton{
+  margin: 0 auto;
+  width: fit-content;
+  padding: 15px 40px;
+  background-color: $accent-color;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 2px;
+}

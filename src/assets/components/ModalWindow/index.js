@@ -16,14 +16,7 @@ for(let i = 1; ; i++){
 
 const modal = document.getElementById("openModal");
 
-const close = document.querySelector(".close");
-
-
-modal.onclick = closeWindow;
-close.onclick = closeWindow;
-
-
-function closeWindow() {
+modal.onclick = () => {
     modal.style.display = "none";
     document.querySelector(`a[id='work${choosenWorkNumber}'`).style.boxShadow = null;
 };
