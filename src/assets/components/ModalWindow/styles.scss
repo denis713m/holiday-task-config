@@ -1,0 +1,41 @@
+.modalContainer{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+.modalDialog {
+  position: fixed;
+  width: 80vw;
+  max-width: 680px;
+  top: 25%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 4px;
+  border: 15px solid #fff;
+  z-index: 8888;
+  pointer-events: none;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.close {
+  background-image: url("../../images/fancybox_sprite@2x.png");
+  background-size: 44px 152px;
+  position: absolute;
+  z-index: 9999;
+  left: calc( 100% - 3px);
+  top: -33px;
+  width: 36px;
+  height:36px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
